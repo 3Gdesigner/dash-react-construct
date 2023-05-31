@@ -1,0 +1,15 @@
+version: "3.4"
+services:
+ vite_react:
+   image: node:alpine
+   container_name: vite_react
+   entrypoint: /bin/sh
+   ports:
+     - 3000:3000
+   working_dir: /srv/app
+   volumes:
+     - type: bind
+       source: ./
+       target: /srv/app
+      # - .:/srv/app
+   tty: true
