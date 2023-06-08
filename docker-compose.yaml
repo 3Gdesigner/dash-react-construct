@@ -1,8 +1,8 @@
 version: "3.4"
 services:
- vite_react:
+ dash:
    image: node:alpine
-   container_name: vite_react
+   container_name: dash
    entrypoint: /bin/sh
    ports:
      - 3000:3000

@@ -2,7 +2,17 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        18: "4.5rem",
+      },
+      colors: {
+        blue: {
+          600: "#006FF9",
+        },
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-question-mark")],
 };
+
